@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#855252">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="550dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/scream"
+        android:foreground="#99000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnusedAttribute"
+        tools:layout_editor_absoluteY="-10dp"
+        android:importantForAccessibility="no"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/scream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-40dp"
+        android:paddingStart="10dp"
+        android:text="@string/Scream_movie"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/banner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/R18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:textSize="10sp"
+        android:text="@string/Scream_18"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scream"
+        tools:ignore="MissingConstraints,RtlSymmetry,SmallSp" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:text="@string/Scream_Genre"
+        android:textColor="@color/RYB_RED"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/scream"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        android:textSize="15sp"
+        android:textColor="@color/Gray"
+       app:layout_constraintBottom_toTopOf="@+id/R18"
+        android:layout_margin="170dp"
+        android:paddingStart="15dp"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <RatingBar
+        android:id="@+id/rating1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:numStars="5"
+        android:paddingStart="10dp"
+        android:progressBackgroundTint="#E1B2B2"
+        android:rating="3"
+        android:theme="@style/Widget.AppCompat.RatingBar.Indicator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genre"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="19dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rating1"
+        app:layout_constraintTop_toTopOf="@+id/rating1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/storiline_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Storiline"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Scream_discription"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="30dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/storiline_movie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/jack_actor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/jack_quaid"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cast"
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/jenna_actor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/jenna_ortega"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cast"
+        app:layout_constraintLeft_toRightOf="@+id/jack_actor"
+        tools:ignore="RtlSymmetry"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/melissa_actor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:src="@mipmap/melissa_barrera"
+        app:layout_constraintTop_toBottomOf="@+id/cast"
+        app:layout_constraintLeft_toRightOf="@+id/jenna_actor"
+        tools:ignore="RtlSymmetry"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/neve_actor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:src="@mipmap/neve_campbell"
+        app:layout_constraintTop_toBottomOf="@+id/cast"
+        app:layout_constraintLeft_toRightOf="@+id/melissa_actor"
+        tools:ignore="RtlSymmetry"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cast"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/discription"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/JQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jack_quaid"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/JO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jenna_ortega"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor"
+        app:layout_constraintLeft_toRightOf="@+id/jack_actor"/>
+
+    <TextView
+        android:id="@+id/MB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/melissa_barrera"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor"
+        app:layout_constraintLeft_toRightOf="@+id/JO"/>
+
+    <TextView
+        android:id="@+id/NC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/neve_cambell"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor"
+        app:layout_constraintLeft_toRightOf="@+id/MB"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

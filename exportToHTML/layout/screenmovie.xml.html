@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>screenmovie.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+screenmovie.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+
+
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+
+
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/rating&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;#855252&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;View</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;@color/black&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/banner&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;550dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;300dp&quot;</span>
+        <span class="s1">android:scaleType</span><span class="s2">=&quot;fitXY&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@mipmap/scream&quot;</span>
+        <span class="s1">android:foreground</span><span class="s2">=&quot;#99000000&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;-10dp&quot;</span>
+        <span class="s1">android:importantForAccessibility</span><span class="s2">=&quot;no&quot;</span>
+        <span class="s1">tools:targetApi</span><span class="s2">=&quot;m&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/scream&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;-40dp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Scream_movie&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;35sp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;@+id/banner&quot;</span>
+        <span class="s1">app:layout_constraintRight_toRightOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/R18&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Scream_18&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/scream&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/genre&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Scream_Genre&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/RYB_RED&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;15sp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/scream&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/back&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Back&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/Gray&quot;</span>
+       <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/R18&quot;</span>
+        <span class="s1">android:layout_margin</span><span class="s2">=&quot;170dp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;15dp&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;RatingBar</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/rating1&quot;</span>
+        <span class="s1">style</span><span class="s2">=&quot;?android:attr/ratingBarStyleSmall&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;13dp&quot;</span>
+        <span class="s1">android:numStars</span><span class="s2">=&quot;5&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:progressBackgroundTint</span><span class="s2">=&quot;#E1B2B2&quot;</span>
+        <span class="s1">android:rating</span><span class="s2">=&quot;3&quot;</span>
+        <span class="s1">android:theme</span><span class="s2">=&quot;@style/Widget.AppCompat.RatingBar.Indicator&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toLeftOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/genre&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/like&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/rating&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;19dp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/rating1&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@+id/rating1&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/storiline_movie&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Storiline&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;15sp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/like&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toLeftOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/discription&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/Scream_discription&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:paddingEnd</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;8dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/storiline_movie&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@mipmap/jack_quaid&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/cast&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot;</span>
+        <span class="s1">android:importantForAccessibility</span><span class="s2">=&quot;no&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/jenna_actor&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@mipmap/jenna_ortega&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/cast&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;RtlSymmetry&quot;</span>
+        <span class="s1">android:importantForAccessibility</span><span class="s2">=&quot;no&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/melissa_actor&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@mipmap/melissa_barrera&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/cast&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/jenna_actor&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;RtlSymmetry&quot;</span>
+        <span class="s1">android:importantForAccessibility</span><span class="s2">=&quot;no&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/neve_actor&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@mipmap/neve_campbell&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/cast&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/melissa_actor&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;RtlSymmetry&quot;</span>
+        <span class="s1">android:importantForAccessibility</span><span class="s2">=&quot;no&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/cast&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/cast&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/discription&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/JQ&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/jack_quaid&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints,RtlSymmetry&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/JO&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/jenna_ortega&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/MB&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/melissa_barrera&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/JO&quot;</span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/neve_cambell&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/jack_actor&quot;</span>
+        <span class="s1">app:layout_constraintLeft_toRightOf</span><span class="s2">=&quot;@+id/MB&quot;</span><span class="s0">/&gt;</span>
+
+
+
+
+
+
+
+
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre>
+</body>
+</html>
